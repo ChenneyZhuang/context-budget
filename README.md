@@ -22,6 +22,13 @@ Without the budget: the agent re-reads, contradicts its earlier decisions, and t
 
 没有预算：重读、推翻自己三轮前的决定、最后三分之一靠残血硬撑。有预算：计划只有三行，每个已确立的事实都在笔记文件里，最后一程是读两个小文件，而不是回忆十个。
 
+## Honest limitations / 如实说明局限
+
+- Notes files add a small write overhead; for tasks under ~10 steps the budget machinery costs more than it saves.
+- Compaction behavior differs across runtimes; checkpoints help everywhere, but the exact survival guarantee is the runtime's.
+
+笔记文件有小额写入开销；十步以内的短任务，预算机制得不偿失。压缩行为因运行时而异；检查点到处有益，但确切保证取决于运行时。
+
 ## Install / 安装
 
 ```bash
