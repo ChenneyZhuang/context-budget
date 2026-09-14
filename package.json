@@ -1,0 +1,15 @@
+{
+  "name": "context-budget",
+  "version": "0.1.0",
+  "description": "Spend the context window like a budget on long tasks: load files by graduated reads (head first, sections on demand, targeted search before full reads), store discovered facts to a notes file the moment they are established so nothing is re-derived, and re-state the running task plan at checkpoints — the difference between finishing a long task and drowning at 80%.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChenneyZhuang/context-budget.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
