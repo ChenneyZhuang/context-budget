@@ -18,6 +18,10 @@ metadata:
 
 # Context Budget: the window is the working memory — spend it deliberately
 
+## When to use
+
+Use when a long-running agent session degrades, when designing multi-session workflows, or when context fills faster than a task completes. Use to decide what to keep, summarize, or drop. Not for disk space or memory management.
+
 Long tasks fail at 80%: the window fills with re-read files, the plan lives
 in scrollback, and compaction takes what was not written down. Three habits
 turn the window into a budget.
@@ -64,3 +68,9 @@ turn the window into a budget.
 Files were read graduated rather than wholesale, every established fact and
 decision lives in the notes file, checkpoints anchor each phase, and the
 task's final stretch ran on notes instead of re-derivation.
+
+## Gotchas / 常见坑
+
+- Token counts are estimates that vary by tokenizer — budget by behavior (what gets summarized when), not exact counts.
+- The biggest wins come from dropping whole content classes (stale tool outputs), not shaving words.
+- Measure before trimming: unmeasured 'optimization' reliably deletes the wrong context.

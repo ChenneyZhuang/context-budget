@@ -1,0 +1,23 @@
+{
+  "skill_name": "context-budget",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我的 agent 会话太长了开始变笨，怎么管理上下文",
+      "expected_output": "A context budget: content classes ranked by value (recent task state kept, stale tool outputs dropped), behavior-based summarization triggers, and measurement before trimming.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Set up a context budget for our long-running research agent",
+      "expected_output": "A budget plan with keep/drop classes, summarize-when rules based on behavior rather than exact token counts, and a measurement step before any cut.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "上下文快满了，帮我决定删什么",
+      "expected_output": "A triage of current context by class with the measured basis for each cut; whole stale classes dropped before shaving words.",
+      "files": []
+    }
+  ]
+}
